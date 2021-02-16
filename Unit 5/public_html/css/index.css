@@ -1,0 +1,38 @@
+.section {
+    text-align: center;
+}
+.tagline {
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+.testimonial-container {
+    display: flex;
+}
+.testimonial {
+    width: calc(100% / 3)
+}
+.testimonial p {
+    margin-top: 2rem;
+}
+.testimonial span {
+    font-style: italic;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.time-container {
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+    .testimonial {
+        width: 100%;
+    }
+}

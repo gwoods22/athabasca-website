@@ -1,0 +1,32 @@
+.rows {
+    display: flex;
+}
+.section > div {
+    width: 50%;
+}
+.label {
+    font-weight: 700;
+}
+input, textarea {
+    max-width: 250px;
+    width: 100%;
+}
+button, button:hover {
+    color: #fff;
+    display: block;
+}
+
+@media (max-width: 550px) {
+    .section {
+        flex-direction: column;
+    }
+    .section > div {
+        width: 100%;
+    }
+    .section > div:last-child {
+        padding: 2rem 0;
+    }
+    .footer {
+        text-align: left;
+    }
+}
