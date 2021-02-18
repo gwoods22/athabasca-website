@@ -18,16 +18,6 @@
 .testimonial span {
     font-style: italic;
 }
-.footer {
-    display: flex;
-    flex-direction: column;
-}
-.time-container {
-    font-size: 1.2rem;
-    border: 1px solid #fff;
-    padding: 0 1rem;
-    margin: 0 auto;
-}
 @media (max-width: 768px) {
     .testimonial-container {
         flex-direction: column;

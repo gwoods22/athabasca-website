@@ -1,6 +1,7 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
     <title>Grow With Graeme</title>
     <meta name="author" content="Graeme Woods" />
     <meta name="last-modified" content="January 26, 2021" />
-    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="icon" type="image/png" href="./favicon.png">
 
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/skeleton.css">
@@ -30,8 +31,46 @@
     </div>
     <div class="section">
         <h2>Pricing</h2>
-        <p>Grow With Graeme provides a variety of services all at competitive prices, as well as custom work billed per
-            hour.</p>
+        <p class="copy">Grow With Graeme provides a variety of services all at competitive prices, as well as custom work billed per hour. Enter your project details below to receive a pricing estimate!</p>
+        <div class="calculator">
+            <p class="title">Pricing Calculator</p>
+            <p id="cost">$400</p>
+            <div class="slider">
+                <p class="field">Timeline: <span id="timeline-value">2-3 weeks</span></p>
+                <span class="min">No rush</span>
+                <span class="mid">2-3 weeks</span>
+                <span class="max">This week</span>
+                <input type="range" min="1" max="3" value="2" step="1" id="timeline" class="slider-input"
+                    oninput="update('timeline')" onfocus="hideArrows()">
+                <div class="arrow-container">
+                    <div class="arrow-left"></div>
+                    <div class="arrow-right"></div>
+                </div>
+            </div>
+            <div class="slider">
+                <p class="field">Webpages: <span id="pages-value">3</span></p>
+                <span class="min">1</span>
+                <span class="max">5+</span>
+                <input type="range" min="1" max="5" value="3" step="1" id="pages" class="slider-input"
+                    oninput="update('pages')" onfocus="hideArrows()">
+                <div class="arrow-container">
+                    <div class="arrow-left"></div>
+                    <div class="arrow-right"></div>
+                </div>
+            </div>
+            <div class="slider">
+                <p class="field">Revisions: <span id="revisions-value">2</span></p>
+                <span class="min">0</span>
+                <span class="max">4+</span>
+                <input type="range" min="0" max="4" value="2" step="1" id="revisions" class="slider-input"
+                    oninput="update('revisions')" onfocus="hideArrows()">
+                <div class="arrow-container">
+                    <div class="arrow-left"></div>
+                    <div class="arrow-right"></div>
+                </div>
+            </div>
+            <p class="disclaimer">Prices shown in this calculator are just estimates and not quotes. Get in touch with Graeme to receive a full quote.</p>
+        </div>
         <table>
             <tbody>
                 <tr>
@@ -52,7 +91,7 @@
                 </tr>
                 <tr>
                     <td>Instagram Shopping Setup</td>
-                    <td>$75</td>
+                    <td>$90</td>
                 </tr>
                 <tr>
                     <td>Custom Shopify/Web Development</td>
@@ -66,7 +105,11 @@
             run by Graeme Woods, an accomplished software engineering student with 3+ years of web development
             experience.</p>
         <p>&copy; Graeme Woods 2021</p>
+        <div class="time-container">
+            <p>Local time for Graeme is: <span id="time"></span></p>
+        </div>
     </div>
+    <script src="./js/pricing.js" type="text/javascript"></script>
+    <script src="./js/clock.js" type="text/javascript"></script>
 </body>
-
 </html>

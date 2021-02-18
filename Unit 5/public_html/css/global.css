@@ -42,9 +42,28 @@ a:hover {
 .footer {
     padding-bottom: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-container {
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    padding: 0 1rem !important;
+    margin: 0 auto;
+    text-align: center;
+    width: unset !important;
+}
+
+.time-container p {
+    margin-bottom: 0;
 }
 
 @media (max-width: 500px) {
+    .navbar {
+        padding: 0;
+        justify-content: center;
+    }
     .section {
         padding: 1rem 2rem;
     }
