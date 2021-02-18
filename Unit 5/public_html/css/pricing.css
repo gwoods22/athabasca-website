@@ -47,7 +47,7 @@ th {
 .mid {
   position: relative;
   top: 20px;
-  left: 8px;
+  left: 6px;
 }
 
 .max {
@@ -144,6 +144,12 @@ th {
   transform: translateX(-50%);
   pointer-events: none;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .arrow-container {
+    display: none;
+  }
 }
 
 @keyframes pulse-left {
