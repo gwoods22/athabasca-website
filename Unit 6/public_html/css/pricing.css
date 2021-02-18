@@ -147,6 +147,7 @@ th {
 }
 
 /* hide arrows in safari and on mobile because neither support onFocus event */
+/*  This unique media query for Safari was used from https://browserstrangeness.bitbucket.io/css_hacks.html#safari */
 @media not all and (min-resolution:.001dpcm), (max-width: 480px)  {
   .arrow-container {
     display: none;
