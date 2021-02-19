@@ -33,7 +33,7 @@ function startTime() {
     sseconds = checkForZero(seconds);
 
     // update #time span tag
-    document.getElementById('time').innerHTML = hours + ":" + minutes + ":" + sseconds;            
+    $('#time').text(hours + ":" + minutes + ":" + sseconds);
 }
 
 // run once then again every second
