@@ -8,6 +8,9 @@
 .slide {
     position: relative;
 }
+.slick-slide img {
+    width: 100%;
+}
 .slide h3 {
     position: absolute;
     left: 50%;
