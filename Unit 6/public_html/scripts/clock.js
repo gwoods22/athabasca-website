@@ -19,7 +19,7 @@ function startTime() {
     // get user's Timezone in minutes from GMT
     var browserTimezone = (new Date).getTimezoneOffset();
     // get difference in minutes from EST
-    var timezoneOffset = browserTimezone - 300;
+    var timezoneOffset = browserTimezone - 240;
     // create new date object including offset
     var todayInEST = new Date((new Date()).getTime() + timezoneOffset*60000);
 
