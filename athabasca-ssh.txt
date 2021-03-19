@@ -5,4 +5,4 @@ ssh graemewo2@student.athabascau.ca
 scp ~/Documents/School/Comp\ 266/Unit\ 2/website/index.html graemewo2@student.athabascau.ca:/home/graemewo2/public_html
 
 ---Copy folder---
-rsync -avz -e 'ssh' ~/Documents/School/Comp\ 266/Unit\ 6/public_html graemewo2@student.athabascau.ca:/home/graemewo2/
+rsync -avz -e 'ssh' ~/Documents/School/Comp\ 266/Unit\ 6/public_html graemewo2@student.athabascau.ca:/home/graemewo2/public_html/
