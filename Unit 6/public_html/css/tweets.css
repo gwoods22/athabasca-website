@@ -1,0 +1,74 @@
+#tweets ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+#tweets li {
+    text-align: left;
+    max-width: 500px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin-top: 3rem;
+    background-color: #fff;
+    color: #000;
+}
+#tweets a {
+    color: #000;
+}
+#tweets .user {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tweets .user > a {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid #3464db;
+}
+#tweets img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+#tweets .tweet {
+    width: calc(75% - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0 2rem;
+    font-size: 1.7rem;
+}
+#tweets .timePosted {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: right;
+    margin-bottom: 0;
+}
+#tweets .interact {
+    display: none;
+}
+@media (max-width: 650px) {    
+    #tweets .user, #tweets .tweet {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #tweets .user span {
+        display: block;
+    }
+}
