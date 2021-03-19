@@ -1,11 +1,21 @@
-$(document).ready(function(){
-    $.ajax({
-        url: "https://quotes.rest/qod",
-      }).done(function(res) {
-        let quoteObj = res.contents.quotes[0];
+$(document).ready(function () {
+  $.ajax({
+    url: "https://quotes.rest/qod",
+  }).done((res) => {
+    let quoteObj = res.contents.quotes[0];
+    $('.quote h4').text(quoteObj.quote)
+    $('.quote span').text(quoteObj.author)
+  }).fail((res) => {
+    $('.quote p').hide()
+    let timeLeft = res.responseJSON.error.message.split('wait for ')[1]
 
-        $('.quote h4').text(quoteObj.quote)
-        $('.quote span').text(quoteObj.author)
+    if (res.responseJSON.error.code === 429) {
+      $('.quote h4').text(`Too many requests to the quote API, please comeback in ${timeLeft}!`)
+    } else {
+      $('.quote h4').text('Issue with Quote API')
+    }
+  });
+
   $('#form').submit(function(event) {
     event.preventDefault();
 
@@ -49,5 +59,5 @@ $(document).ready(function(){
         // console.error(JSON.parse(response.target.response).message);
       }
     };
-      });
+  });
 });
